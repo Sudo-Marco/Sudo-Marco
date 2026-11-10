@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+  <title id="title">Marco Antônio Veloso Sousa</title>
+  <desc id="desc">Estudante de Ciência da Computação com projetos em Python, Java e inteligência artificial.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111923" />
+      <stop offset="1" stop-color="#07120f" />
+    </linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#5b7c72" stroke-opacity=".12" stroke-width="1" />
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="340" rx="22" fill="url(#background)" />
+  <rect width="1200" height="340" rx="22" fill="url(#grid)" />
+  <rect x="28" y="28" width="1144" height="284" rx="16" fill="#0a1118" fill-opacity=".56" stroke="#35584c" stroke-width="1.5" />
+  <path d="M 45 83 H 1155" stroke="#35584c" stroke-opacity=".8" />
+
+  <circle cx="57" cy="56" r="6" fill="#f77669" />
+  <circle cx="79" cy="56" r="6" fill="#e6c66a" />
+  <circle cx="101" cy="56" r="6" fill="#62c98b" />
+  <text x="128" y="61" fill="#84a69b" font-family="Consolas, 'Courier New', monospace" font-size="15">marco@portfolio:~</text>
+
+  <text x="76" y="133" fill="#72d69b" font-family="Consolas, 'Courier New', monospace" font-size="18">$ whoami</text>
+  <text x="76" y="190" fill="#edf5f1" font-family="Segoe UI, Arial, sans-serif" font-size="43" font-weight="700">Marco Antônio Veloso Sousa</text>
+  <text x="78" y="229" fill="#a8bbb4" font-family="Segoe UI, Arial, sans-serif" font-size="21">Ciência da Computação · Python · Java · Inteligência Artificial</text>
+  <text x="78" y="277" fill="#72d69b" font-family="Consolas, 'Courier New', monospace" font-size="17">$ estudar  →  experimentar  →  construir</text>
+  <rect x="78" y="289" width="10" height="5" rx="1" fill="#e6c66a" filter="url(#glow)" />
+
+  <path d="M 926 108 L 1047 66 L 1138 108 L 1138 181 C 1138 238 1080 270 1032 287 C 984 270 926 238 926 181 Z" fill="#103026" fill-opacity=".45" stroke="#2e805b" stroke-width="2" />
+  <path d="M 984 151 L 1021 181 L 984 211" fill="none" stroke="#66d995" stroke-linecap="round" stroke-linejoin="round" stroke-width="11" filter="url(#glow)" />
+  <path d="M 1049 211 H 1092" fill="none" stroke="#e5c65e" stroke-linecap="round" stroke-width="10" filter="url(#glow)" />
+</svg>
