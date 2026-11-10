@@ -14,9 +14,13 @@ Experimento local-first em Python com uma rede neural pulsada implementada em Nu
 
 Projeto acadêmico em equipe sobre cidadania digital e desinformação eleitoral. Aplicação educativa desenvolvida em Java 17 e Swing, com persistência local e integração opcional com Cloud Firestore.
 
-## Tecnologias presentes nos projetos
+## Tecnologias dos projetos
 
-Python · NumPy · Java 17 · PySide6 · Swing · Cloud Firestore · PostgreSQL · Git
+Python · NumPy · PySide6 · Java 17 · Swing · Cloud Firestore
+
+## Conhecimentos complementares
+
+PostgreSQL · Git
 
 ## Formação
 
