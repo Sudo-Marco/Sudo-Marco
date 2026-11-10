@@ -1,16 +1,24 @@
-## Hi there 👋
+# Marco Antônio Veloso Sousa
 
-<!--
-**Sudo-Marco/Sudo-Marco** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### Estudante de Ciência da Computação | Desenvolvimento de Software e Inteligência Artificial
 
-Here are some ideas to get you started:
+Estudante de Ciência da Computação na Unijorge, com conclusão prevista para agosto de 2028. Desenvolvo projetos acadêmicos e pessoais em Python e Java e tenho interesse em engenharia de IA e aprendizado de máquina.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Projetos em destaque
+
+### [Synapse Pet](https://github.com/Sudo-Marco/synapse-companion)
+
+Experimento local-first em Python com uma rede neural pulsada implementada em NumPy. Explora neurônios LIF, aprendizagem por STDP modulada por recompensa e seleção contextual de ações, com interface desktop em PySide6 e avaliações sintéticas documentadas.
+
+### [Urna Cidadã](https://github.com/Sudo-Marco/urna-cidada)
+
+Projeto acadêmico em equipe sobre cidadania digital e desinformação eleitoral. Aplicação educativa desenvolvida em Java 17 e Swing, com persistência local e integração opcional com Cloud Firestore.
+
+## Tecnologias presentes nos projetos
+
+Python · NumPy · Java 17 · PySide6 · Swing · Cloud Firestore · PostgreSQL · Git
+
+## Formação
+
+Bacharelado em Ciência da Computação — Unijorge  
+Agosto de 2025 – agosto de 2028 (previsão)
