@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+  <title id="title">Marco Antônio Veloso Sousa</title>
+  <desc id="desc">Estudante de Ciência da Computação com projetos em Python, Java e inteligência artificial.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3f8f5" />
+      <stop offset="1" stop-color="#e6f0ea" />
+    </linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#6a8277" stroke-opacity=".15" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect width="1200" height="340" rx="22" fill="url(#background)" />
+  <rect width="1200" height="340" rx="22" fill="url(#grid)" />
+  <rect x="28" y="28" width="1144" height="284" rx="16" fill="#ffffff" fill-opacity=".78" stroke="#849f91" stroke-width="1.5" />
+  <path d="M 45 83 H 1155" stroke="#849f91" stroke-opacity=".8" />
+  <circle cx="57" cy="56" r="6" fill="#a63a2d" />
+  <circle cx="79" cy="56" r="6" fill="#705800" />
+  <circle cx="101" cy="56" r="6" fill="#176c45" />
+  <text x="128" y="61" fill="#40584c" font-family="Consolas, 'Courier New', monospace" font-size="15">marco@portfolio:~</text>
+  <text x="76" y="133" fill="#176c45" font-family="Consolas, 'Courier New', monospace" font-size="18">$ whoami</text>
+  <text x="76" y="190" fill="#13231d" font-family="Segoe UI, Arial, sans-serif" font-size="43" font-weight="700">Marco Antônio Veloso Sousa</text>
+  <text x="78" y="229" fill="#40584c" font-family="Segoe UI, Arial, sans-serif" font-size="21">Ciência da Computação · Python · Java · Inteligência Artificial</text>
+  <text x="78" y="277" fill="#176c45" font-family="Consolas, 'Courier New', monospace" font-size="17">$ estudar  →  experimentar  →  construir</text>
+  <rect x="78" y="289" width="10" height="5" rx="1" fill="#705800" />
+  <path d="M 926 108 L 1047 66 L 1138 108 L 1138 181 C 1138 238 1080 270 1032 287 C 984 270 926 238 926 181 Z" fill="#eaf3ed" stroke="#397659" stroke-width="2" />
+  <path d="M 984 151 L 1021 181 L 984 211" fill="none" stroke="#176c45" stroke-linecap="round" stroke-linejoin="round" stroke-width="11" />
+  <path d="M 1049 211 H 1092" fill="none" stroke="#705800" stroke-linecap="round" stroke-width="10" />
+</svg>

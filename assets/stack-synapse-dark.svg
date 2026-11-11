@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 48" role="img" aria-labelledby="title">
+  <title id="title">Python, NumPy e PySide6</title>
+  <g fill="#0a1118" stroke="#35584c" stroke-width="1.5">
+    <rect x="1" y="4" width="132" height="40" rx="10" />
+    <rect x="145" y="4" width="132" height="40" rx="10" />
+    <rect x="289" y="4" width="142" height="40" rx="10" />
+  </g>
+  <g fill="#72d69b"><circle cx="17" cy="24" r="4"/><circle cx="161" cy="24" r="4"/><circle cx="305" cy="24" r="4"/></g>
+  <g fill="#edf5f1" font-family="Consolas, 'Courier New', monospace" font-size="15">
+    <text x="28" y="29">Python</text><text x="172" y="29">NumPy</text><text x="316" y="29">PySide6</text>
+  </g>
+</svg>
