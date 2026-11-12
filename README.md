@@ -9,7 +9,7 @@
 <p align="center">
   <strong>Estudante de Ciência da Computação · Python e Java · Engenharia de IA e Machine Learning</strong><br />
   Unijorge · conclusão prevista para 2028 · Salvador, BA<br />
-  <a href="LINKEDIN_URL">Adicionar LinkedIn</a> · <a href="mailto:EMAIL_PUBLICO">Adicionar e-mail público</a>
+  LinkedIn: adicionar URL · <a href="mailto:marcoantoniq7162@gmail.com">E-mail</a>
 </p>
 
 <p align="center"><picture>
@@ -74,5 +74,5 @@ Engenharia de IA e fundamentos de Machine Learning, com atenção à avaliação
 </picture></p>
 
 <p align="center"><code>sudo construir --com-curiosidade</code><br />
-  <a href="LINKEDIN_URL">LinkedIn</a> · <a href="mailto:EMAIL_PUBLICO">E-mail</a> · <a href="https://github.com/Sudo-Marco">GitHub</a>
+  LinkedIn: adicionar URL · <a href="mailto:marcoantoniq7162@gmail.com">E-mail</a> · <a href="https://github.com/Sudo-Marco">GitHub</a>
 </p>
