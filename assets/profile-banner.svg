@@ -1,37 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
-  <title id="title">Marco Antônio Veloso Sousa</title>
-  <desc id="desc">Estudante de Ciência da Computação com projetos em Python, Java e inteligência artificial.</desc>
-  <defs>
-    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#111923" />
-      <stop offset="1" stop-color="#07120f" />
-    </linearGradient>
-    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
-      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#5b7c72" stroke-opacity=".12" stroke-width="1" />
-    </pattern>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="6" result="blur" />
-      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+<title id="title">Marco Antônio Veloso Sousa — Sudo-Marco</title><desc id="desc">Estudante de Ciência da Computação com foco em Engenharia de IA e Machine Learning. Um pintinho pixel art original reage ao trem de disparos de uma curva LIF.</desc>
+<defs><style>
+text { fill: #FFD93B; font-family: 'Segoe UI', Arial, sans-serif; }
+.mono { font-family: Consolas, 'Courier New', monospace; letter-spacing: .4px; }
+.kicker,.stack,.axis,.threshold { font-size: 15px; }
+.name { font-size: 43px; font-weight: 700; }
+.role { font-size: 20px; }
+.axis,.threshold { opacity: .76; }
+.trace { stroke-dasharray: 1000; stroke-dashoffset: 0; }
+.flow { stroke-dasharray: 36 1000; animation: signal 5s linear infinite; }
+.spike { animation: spike 5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+.copy { animation: appear .8s ease-out both; }
+.bird { image-rendering: pixelated; }
+.idle { opacity: 1; } .happy { opacity: 0; }
+.bird { animation: hop 5s ease-in-out infinite; transform-box: fill-box; transform-origin: center bottom; }
+.idle { animation-name: idle-face; animation-duration: 5s; animation-iteration-count: infinite; }
+.happy { animation-name: happy-face; animation-duration: 5s; animation-iteration-count: infinite; }
+@keyframes signal { to { stroke-dashoffset: -1036; } }
+@keyframes spike { 0%,36%,54%,100% { opacity: .48; } 42%,48% { opacity: 1; } }
+@keyframes hop { 0%,38%,52%,100% { transform: translateY(0); } 43% { transform: translateY(-7px); } 48% { transform: translateY(-2px); } }
+@keyframes idle-face { 0%,39%,52%,100% { opacity: 1; } 42%,49% { opacity: 0; } }
+@keyframes happy-face { 0%,39%,52%,100% { opacity: 0; } 42%,49% { opacity: 1; } }
+@keyframes appear { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) {
+  *,*::before,*::after { animation: none !important; transition: none !important; }
+  .flow { display: none; } .spike { opacity: 1; }
+  .idle { opacity: 0 !important; } .happy { opacity: 1 !important; }
+}
+</style></defs>
 
-  <rect width="1200" height="340" rx="22" fill="url(#background)" />
-  <rect width="1200" height="340" rx="22" fill="url(#grid)" />
-  <rect x="28" y="28" width="1144" height="284" rx="16" fill="#0a1118" fill-opacity=".56" stroke="#35584c" stroke-width="1.5" />
-  <path d="M 45 83 H 1155" stroke="#35584c" stroke-opacity=".8" />
+<rect width="1200" height="340" fill="#152126" />
+<path d="M 632 290 H 1144" fill="none" stroke="#FFD93B" stroke-opacity=".12" stroke-width="1" />
+<path d="M 632 181 H 1144" fill="none" stroke="#FFD93B" stroke-opacity=".12" stroke-width="1" stroke-dasharray="4 9" />
+<path class="trace" d="M 632 276 H 660 L 673 270 L 681 242 L 690 181 L 699 270 L 714 276 H 762 L 775 270 L 783 242 L 792 181 L 801 270 L 816 276 H 862 L 875 270 L 883 238 L 892 112 L 901 270 L 916 276 H 962 L 975 270 L 983 242 L 992 181 L 1001 270 L 1016 276 H 1144" pathLength="1000" fill="none" stroke="#FFD93B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<path class="flow" d="M 632 276 H 660 L 673 270 L 681 242 L 690 181 L 699 270 L 714 276 H 762 L 775 270 L 783 242 L 792 181 L 801 270 L 816 276 H 862 L 875 270 L 883 238 L 892 112 L 901 270 L 916 276 H 962 L 975 270 L 983 242 L 992 181 L 1001 270 L 1016 276 H 1144" pathLength="1000" fill="none" stroke="#FFD93B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+<path class="spike" d="M 892 112 L 901 270" fill="none" stroke="#397581" stroke-width="7" stroke-linecap="round" />
+<text class="mono kicker" x="64" y="48">SUDO-MARCO  /  CIÊNCIA DA COMPUTAÇÃO</text>
+<g class="copy">
+  <text class="name" x="64" y="119">Marco Antônio</text>
+  <text class="name" x="64" y="168">Veloso Sousa</text>
+  <text class="role" x="66" y="218">Estudante · Engenharia de IA e Machine Learning</text>
+  <text class="mono stack" x="66" y="257">Python  ·  NumPy  ·  Java  ·  PySide6</text>
+</g>
+<text class="mono axis" x="638" y="309">DISPAROS  /  LIF</text>
+<text class="mono axis" x="1020" y="309">STDP</text>
+<image class="bird idle" x="852" y="74" width="128" height="176" preserveAspectRatio="none" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAsCAYAAAAEuLqPAAACfElEQVR4nO1XsU4bQRC9W50EFFaqIIEEooF0EaIFKT1uKA0VDQWiShOiNFEoIuGGClHQUAXoaPwBlvwBiM7QWEKCwhW4CGnYaM4357m53dldAxV+0sp3u8/z3s3s3u5F0QgjjPDeEb80gO6d6DxYZTM4ngoVw0bFq1++heqGG9BMzCRODdLMvAp070SvLk3qx/PZ9BfvdXs5bdiX93saUb7ivkYhI2e74+mvT2lUaGAAClA0TucLfch1IYmGQG3/aWBs/aYw5ivsbUCT9KMwPK0JYAY5r5IBTWa6TZSCcnhmgueADhSXzEiTWAWJL7SCTfD3htOA5uLTW/2WiYupBc5Cq8BxmVCmOFLaO13lrC/n8CVqnITaVqe74zRYp/u9JMAnXac7JXJMm1dCB1+yqfiAxm806+YSHKz965MtaT68uncKcQ7GgtgYH6FM6eckip3PgzSHcEwxQVfR9NiEoY5zH5/ze7yGJ8NG+/HaNpFBB8uR8MGpTx+yq6eSicLMrk2UAlfP/uYmTOIY+779kPclnISDjZ0/UUTfOyu/86DSMiwIt35ksfq31+2NEl/lf2zWo68XY2mTIIrXJpzvCNTAVRDjAJ2IheViSGXv8nawM2algPRzPvAqizPF0mXCpfdAnJ1o0QivOQdut9X9ojCIcrNcnJ6eE6uCsO+bjHBhzsGM8aO7Mgo369anl4RsAHGaetFAnDmUTAwrbvpwiYc5kIRkobK6ZxUXDbhM+BhxiTsNcBMI01JLOaxkkHrX92LiMgAB8qWZ1bK8bZfXue/WnkiDtkOKbUZLMYafA0c/ywPbv4wBQ/mAoM/zt0AsDUrneWsGAvgjQAb+A1v+s01cculZAAAAAElFTkSuQmCC" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAsCAYAAAAEuLqPAAACfElEQVR4nO1XsU4bQRC9W50EFFaqIIEEooF0EaIFKT1uKA0VDQWiShOiNFEoIuGGClHQUAXoaPwBlvwBiM7QWEKCwhW4CGnYaM4357m53dldAxV+0sp3u8/z3s3s3u5F0QgjjPDeEb80gO6d6DxYZTM4ngoVw0bFq1++heqGG9BMzCRODdLMvAp070SvLk3qx/PZ9BfvdXs5bdiX93saUb7ivkYhI2e74+mvT2lUaGAAClA0TucLfch1IYmGQG3/aWBs/aYw5ivsbUCT9KMwPK0JYAY5r5IBTWa6TZSCcnhmgueADhSXzEiTWAWJL7SCTfD3htOA5uLTW/2WiYupBc5Cq8BxmVCmOFLaO13lrC/n8CVqnITaVqe74zRYp/u9JMAnXac7JXJMm1dCB1+yqfiAxm806+YSHKz965MtaT68uncKcQ7GgtgYH6FM6eckip3PgzSHcEwxQVfR9NiEoY5zH5/ze7yGJ8NG+/HaNpFBB8uR8MGpTx+yq6eSicLMrk2UAlfP/uYmTOIY+779kPclnISDjZ0/UUTfOyu/86DSMiwIt35ksfq31+2NEl/lf2zWo68XY2mTIIrXJpzvCNTAVRDjAJ2IheViSGXv8nawM2algPRzPvAqizPF0mXCpfdAnJ1o0QivOQdut9X9ojCIcrNcnJ6eE6uCsO+bjHBhzsGM8aO7Mgo369anl4RsAHGaetFAnDmUTAwrbvpwiYc5kIRkobK6ZxUXDbhM+BhxiTsNcBMI01JLOaxkkHrX92LiMgAB8qWZ1bK8bZfXue/WnkiDtkOKbUZLMYafA0c/ywPbv4wBQ/mAoM/zt0AsDUrneWsGAvgjQAb+A1v+s01cculZAAAAAElFTkSuQmCC" />
+<image class="bird happy" x="852" y="74" width="128" height="176" preserveAspectRatio="none" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAsCAYAAAAEuLqPAAACiUlEQVR4nO1XPWgUQRSeXRZPi8MqQgLKgSQBrwlWQgQbq9hYRqs0FhIshKBiI6YQPAQLC4s0VyXapbnO5iBFyjRXnCIIQixSxWtyFhl5k32bt2/f/G1i5X2w7O7M2+/79s3M21mlJphggv8dyVkJ9KirC7LmSjRfGiuGBxW/d+dZrG68Ac3EJHFqkGbmXKBHXb1084r+/fmaOeO9Hi6aA9uK9kAjaah4qFHIyKfnF805ZGjSWGIAClD0tmZLbRjrQ6ZqYPnt0amxB99KfaHCwQY0ST8Kw9tKADMYcy4Z0GSm20QpaAzPTPQc0JHiLjOuSZxGic/tRJvgdYMj8YrPPDrp2N9QdQHD0et3xHKdig8IaW/f/V46S7DF8CUqGtC2qrW/odo3XnhN8D6bUV4hU9rpq16DL9crgjExyE81Uk7w/v64tIw4iSTgi0Eu4Eb+kgHNUk+DkIyS8raQGC6MuhlNjxTEiRGtqeNSsWlNhT2HZsxE73eqlXB6/nJ+dVrvxWW1fEludxQt5P41PCzaMh6Enb3VTaVo3bn9RkVj52XOdXL7dfiwEpLiBaTj6XbDHC7AW/44kCs4tPu+AahRFCaVg05EukyklI72fqpba3/M9eBJQ7U/jIt5QeMhrrlwtWQKhY14cyUphgBLJBox1cvxNrvvLphze21cEgZRbpaL03KcWRUc333JCBemgL0B7hOCvgW9fsf69i4hG0Ccpt5pIMkdukzUFZd+XJI6G5KYLDSX1q3iTgM+EyFGfOJeA9wEQlpqJoYNGaTe97+Y+QwAQbE087GsfrKr6zz0fzFzddr2cbYZ7eKoPwc+vqp2PH4tEsbGA6J+z/8FElenaz9vzUBE/ASQgb8CV7xY9flo9AAAAABJRU5ErkJggg==" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAsCAYAAAAEuLqPAAACiUlEQVR4nO1XPWgUQRSeXRZPi8MqQgLKgSQBrwlWQgQbq9hYRqs0FhIshKBiI6YQPAQLC4s0VyXapbnO5iBFyjRXnCIIQixSxWtyFhl5k32bt2/f/G1i5X2w7O7M2+/79s3M21mlJphggv8dyVkJ9KirC7LmSjRfGiuGBxW/d+dZrG68Ac3EJHFqkGbmXKBHXb1084r+/fmaOeO9Hi6aA9uK9kAjaah4qFHIyKfnF805ZGjSWGIAClD0tmZLbRjrQ6ZqYPnt0amxB99KfaHCwQY0ST8Kw9tKADMYcy4Z0GSm20QpaAzPTPQc0JHiLjOuSZxGic/tRJvgdYMj8YrPPDrp2N9QdQHD0et3xHKdig8IaW/f/V46S7DF8CUqGtC2qrW/odo3XnhN8D6bUV4hU9rpq16DL9crgjExyE81Uk7w/v64tIw4iSTgi0Eu4Eb+kgHNUk+DkIyS8raQGC6MuhlNjxTEiRGtqeNSsWlNhT2HZsxE73eqlXB6/nJ+dVrvxWW1fEludxQt5P41PCzaMh6Enb3VTaVo3bn9RkVj52XOdXL7dfiwEpLiBaTj6XbDHC7AW/44kCs4tPu+AahRFCaVg05EukyklI72fqpba3/M9eBJQ7U/jIt5QeMhrrlwtWQKhY14cyUphgBLJBox1cvxNrvvLphze21cEgZRbpaL03KcWRUc333JCBemgL0B7hOCvgW9fsf69i4hG0Ccpt5pIMkdukzUFZd+XJI6G5KYLDSX1q3iTgM+EyFGfOJeA9wEQlpqJoYNGaTe97+Y+QwAQbE087GsfrKr6zz0fzFzddr2cbYZ7eKoPwc+vqp2PH4tEsbGA6J+z/8FElenaz9vzUBE/ASQgb8CV7xY9flo9AAAAABJRU5ErkJggg==" />
+<text class="mono threshold" x="1026" y="164">LIMIAR</text>
 
-  <circle cx="57" cy="56" r="6" fill="#f77669" />
-  <circle cx="79" cy="56" r="6" fill="#e6c66a" />
-  <circle cx="101" cy="56" r="6" fill="#62c98b" />
-  <text x="128" y="61" fill="#84a69b" font-family="Consolas, 'Courier New', monospace" font-size="15">marco@portfolio:~</text>
-
-  <text x="76" y="133" fill="#72d69b" font-family="Consolas, 'Courier New', monospace" font-size="18">$ whoami</text>
-  <text x="76" y="190" fill="#edf5f1" font-family="Segoe UI, Arial, sans-serif" font-size="43" font-weight="700">Marco Antônio Veloso Sousa</text>
-  <text x="78" y="229" fill="#a8bbb4" font-family="Segoe UI, Arial, sans-serif" font-size="21">Ciência da Computação · Python · Java · Inteligência Artificial</text>
-  <text x="78" y="277" fill="#72d69b" font-family="Consolas, 'Courier New', monospace" font-size="17">$ estudar  →  experimentar  →  construir</text>
-  <rect x="78" y="289" width="10" height="5" rx="1" fill="#e6c66a" filter="url(#glow)" />
-
-  <path d="M 926 108 L 1047 66 L 1138 108 L 1138 181 C 1138 238 1080 270 1032 287 C 984 270 926 238 926 181 Z" fill="#103026" fill-opacity=".45" stroke="#2e805b" stroke-width="2" />
-  <path d="M 984 151 L 1021 181 L 984 211" fill="none" stroke="#66d995" stroke-linecap="round" stroke-linejoin="round" stroke-width="11" filter="url(#glow)" />
-  <path d="M 1049 211 H 1092" fill="none" stroke="#e5c65e" stroke-linecap="round" stroke-width="10" filter="url(#glow)" />
 </svg>

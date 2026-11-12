@@ -1,43 +1,33 @@
 {
-  "name": "terminal-sudo",
+  "name": "spike-pintinho",
+  "palette": {
+    "base": "#152126",
+    "support": "#FFD93B",
+    "spike": "#397581",
+    "lightSurface": "#F1F2E8",
+    "lightSurfaceAlt": "#F8F8F0"
+  },
   "typography": {
-    "monospace": "Consolas, Courier New, monospace",
-    "sansSerif": "Segoe UI, Arial, sans-serif"
+    "display": "Segoe UI, Arial, sans-serif",
+    "technical": "Consolas, Courier New, monospace"
   },
   "shape": {
-    "bannerRadius": 22,
-    "panelRadius": 16,
-    "badgeRadius": 10
+    "bannerRadius": 18,
+    "cardRadius": 20,
+    "badgeRadius": 8
   },
   "spacing": {
-    "base": 28,
-    "bannerPadding": 28,
-    "grid": 28
+    "base": 8,
+    "cardPadding": 20,
+    "sectionGap": 24
   },
-  "dark": {
-    "backgroundStart": "#111923",
-    "backgroundEnd": "#07120f",
-    "surface": "#0a1118",
-    "border": "#35584c",
-    "grid": "#5b7c72",
-    "text": "#edf5f1",
-    "muted": "#a8bbb4",
-    "green": "#72d69b",
-    "greenStrong": "#66d995",
-    "yellow": "#e6c66a",
-    "coral": "#f77669"
+  "motion": {
+    "bannerLoopSeconds": 5,
+    "reducedMotion": "disable CSS animation and show the completed happy-pose frame"
   },
-  "light": {
-    "backgroundStart": "#f3f8f5",
-    "backgroundEnd": "#e6f0ea",
-    "surface": "#ffffff",
-    "border": "#849f91",
-    "grid": "#6a8277",
-    "text": "#13231d",
-    "muted": "#40584c",
-    "green": "#176c45",
-    "greenStrong": "#145c3b",
-    "yellow": "#705800",
-    "coral": "#a63a2d"
+  "usage": {
+    "base": "dark petrol surface and light-mode text",
+    "support": "original chick yellow; primary curve and dark-mode text",
+    "spike": "muted teal, reserved for the firing segment of the LIF curve"
   }
 }
