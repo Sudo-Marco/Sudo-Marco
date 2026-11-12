@@ -37,7 +37,7 @@ Há três cores de identidade: base, apoio e spike. Os tons de superfície claro
 - O ciclo dura 5 s e usa CSS dentro do SVG. A regra `prefers-reduced-motion: reduce` remove as animações e mostra o estado final estático.
 - Cada SVG tem `<title>` e `<desc>`. Cada uso em Markdown tem alt text. Acento de spike é gráfico não textual; texto usa pares de alto contraste.
 - Todo par de tema em README é escolhido com `<picture>` e `prefers-color-scheme`; imagens e capturas são locais ao repositório.
-- Os cards embutem uma cópia compacta da captura real como dado no próprio SVG, evitando referências de imagem externas ou quebradas; a captura original permanece intacta.
+- Os cards embutem uma cópia compacta da captura real como dado no próprio SVG, evitando referências de imagem externas ou quebradas; a captura original permanece intacta. O Synapse tem legendas em PT-BR e inglês para acompanhar cada README.
 
 ## Gerar novamente
 

@@ -166,7 +166,7 @@ def badge_row(is_dark: bool, project: str) -> str:
     return svg("Tecnologias do projeto", "Tecnologias descritas neste repositório, em badges locais sem widgets externos.", f"0 0 {x} 48", body, styles)
 
 
-def demo_card(is_dark: bool, project: str, capture: Path) -> str:
+def demo_card(is_dark: bool, project: str, capture: Path, language: str = "pt") -> str:
     bg, ink, accent = theme(is_dark)
     if project == "synapse":
         # Keep the original capture untouched while embedding a compact copy.
@@ -176,10 +176,13 @@ def demo_card(is_dark: bool, project: str, capture: Path) -> str:
         image_uri = "data:image/jpeg;base64," + base64.b64encode(buffer.getvalue()).decode("ascii")
     else:
         image_uri = read_base64(capture, "image/png")
-    title, subtitle = {
-        "synapse": ("SYNAPSE PET", "CAPTURA REAL  ·  PAINEL PYSIDE6  ·  SENSORES DESLIGADOS"),
-        "urna": ("URNA CIDADÃ", "CAPTURA REAL  ·  MODO DEMONSTRAÇÃO  ·  VOTOS EM MEMÓRIA"),
-    }[project]
+    if project == "synapse" and language == "en":
+        title, subtitle = "SYNAPSE PET", "REAL CAPTURE  ·  PYSIDE6 PANEL  ·  SENSORS OFF"
+    else:
+        title, subtitle = {
+            "synapse": ("SYNAPSE PET", "CAPTURA REAL  ·  PAINEL PYSIDE6  ·  SENSORES DESLIGADOS"),
+            "urna": ("URNA CIDADÃ", "CAPTURA REAL  ·  MODO DEMONSTRAÇÃO  ·  VOTOS EM MEMÓRIA"),
+        }[project]
     body = f'''
 <rect width="1000" height="620" rx="22" fill="{bg}" stroke="{ink}" stroke-width="3"/>
 <rect x="20" y="20" width="960" height="480" rx="12" fill="{ink}" fill-opacity=".08" stroke="{ink}" stroke-opacity=".35" stroke-width="2"/>
@@ -294,6 +297,8 @@ def generate(profile: Path, synapse: Path | None, urna: Path | None) -> None:
             write(assets / f"readme-header-{suffix}.svg", lockup(is_dark, "SYNAPSE PET" if project == "synapse" else "URNA CIDADÃ"))
             write(assets / f"stack-badges-{suffix}.svg", badge_row(is_dark, project))
             write(assets / f"demo-card-{suffix}.svg", demo_card(is_dark, project, capture))
+            if project == "synapse":
+                write(assets / f"demo-card-en-{suffix}.svg", demo_card(is_dark, project, capture, "en"))
         social_preview(repo, project, capture, True)
         social_preview(repo, project, capture, False)
 
